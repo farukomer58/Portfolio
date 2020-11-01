@@ -1,8 +1,3 @@
-.navbar.center .navbar-inner {
-    text-align: center;
-}
-.navbar.center .navbar-inner .nav {
-    float: none;
-    display:inline-block;
-    vertical-align: middle;
+.center{
+    border: 2px solid black;
 }

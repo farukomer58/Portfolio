@@ -1,0 +1,10 @@
+.bannerParent{
+    margin-top: 5px;
+    margin-left: 1px;
+    height:350px;
+    }
+.banner {
+    background-image: url("https://i.imgur.com/QSDmimV_d.webp?maxwidth=728&fidelity=grand");
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
