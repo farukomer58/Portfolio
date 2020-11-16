@@ -1,0 +1,54 @@
+/* container */
+.container-fluid {
+  position: relative;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(https://www.performancefactory.nl/wp-content/uploads/2017/09/Twentsche-Foodhal-beeld.jpg);
+  background-size: cover;
+  padding: 6em;
+}
+
+.jumbotrontext {
+  color: white;
+  background-color: rgba(193, 193, 193, 0.4);
+  margin-left: 25%;
+  width: 45%;
+  padding: .5em;
+  text-align: center;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+/* body */
+.container {
+  width: 70%;
+}
+
+.label {
+  width: 27%;
+  color: #255239;
+  outline: #255239 1.5px solid;
+  margin-left: 35%;
+}
+
+/* cards */
+.card {
+  max-width: 251px;
+  height: 320px;
+}
+
+.card-img-top {
+  height: 185px;
+  background-size: cover;
+}
+
+.add-to-cart-icon {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-top: -10px;
+}
