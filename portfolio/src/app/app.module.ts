@@ -10,6 +10,8 @@ import { PortfolioListComponent } from './components/portfolio/portfolio-list/po
 import { PortfolioItemComponent } from './components/portfolio/portfolio-item/portfolio-item.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PortfolioDetailComponent } from './components/portfolio/portfolio-detail/portfolio-detail.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { AboutmeComponent } from './components/aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { PortfolioDetailComponent } from './components/portfolio/portfolio-detai
     PortfolioListComponent,
     PortfolioItemComponent,
     PortfolioDetailComponent,
+    ContactComponent,
+    AboutmeComponent,
   ],
   imports: [
     AppRoutingModule,
