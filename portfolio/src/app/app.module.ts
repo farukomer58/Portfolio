@@ -9,6 +9,7 @@ import { HomeportfolioComponent } from './components/mainpage/home/homeportfolio
 import { PortfolioListComponent } from './components/portfolio/portfolio-list/portfolio-list.component';
 import { PortfolioItemComponent } from './components/portfolio/portfolio-item/portfolio-item.component';
 import {AppRoutingModule} from './app-routing.module';
+import { PortfolioDetailComponent } from './components/portfolio/portfolio-detail/portfolio-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {AppRoutingModule} from './app-routing.module';
     HomeportfolioComponent,
     PortfolioListComponent,
     PortfolioItemComponent,
+    PortfolioDetailComponent,
   ],
   imports: [
     AppRoutingModule,
