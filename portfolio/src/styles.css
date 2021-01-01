@@ -3,3 +3,7 @@
 #themeColorBg{
     background-color:#ff5252;
 }
+
+.fakeRouter{
+  cursor:pointer;
+}
