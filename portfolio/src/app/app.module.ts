@@ -11,7 +11,6 @@ import { PortfolioItemComponent } from './components/portfolio/portfolio-item/po
 import {AppRoutingModule} from './app-routing.module';
 import { PortfolioDetailComponent } from './components/portfolio/portfolio-detail/portfolio-detail.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { AboutmeComponent } from './components/aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,6 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     PortfolioItemComponent,
     PortfolioDetailComponent,
     ContactComponent,
-    AboutmeComponent,
   ],
   imports: [
     AppRoutingModule,
