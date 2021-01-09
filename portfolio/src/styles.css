@@ -6,33 +6,42 @@
   /*font-family: 'Bebas Neue', cursive;*/
   font-family: 'Catamaran', sans-serif;
   font-size: 20px;
+
+}
+
+body{
+}
+
+.container{
+  height: 100%;
 }
 
 .themeColorBg {
   background-color: #ff5252;
 }
 
+.lightDark{
+  background-color: #eeeff0;
+}
+
 .fakeRouter {
   cursor: pointer;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
-
-.footer {
+/*.footer {
   position: absolute;
   bottom: 0;
   text-align: center;
   height: 60px;
+}*/
+footer {
+  bottom: 0;
+  position: relative;
+  height: 150px;
+  margin-bottom: 0;
 }
 
-
+/* Social Media Buttons Styling */
 ul.social-network {
   list-style: none;
   display: inline;
