@@ -21,6 +21,15 @@
   background-repeat: no-repeat;
   border-radius: 5%;
 }
+.profilePicture{
+  border:1px solid black;
+  border-radius: 5%;
+  box-shadow: 5px 5px
+}
+.aboutme{
+  font-weight: lighter;
+  font-size: 16px;
+}
 
 .detailList {
   list-style-type: none;
@@ -34,7 +43,14 @@
 .descriptionHead {
   font-weight: bold;
 }
-
+.descriptionHeadSmall{
+  font-weight: bold;
+  font-size: 16px;
+}
+.descriptionSmall{
+  font-size: 9px;
+  font-style: italic;
+}
 .descriptionText {
   font-size: 16px;
   font-style: italic;

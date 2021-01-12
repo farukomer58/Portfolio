@@ -12,6 +12,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {PortfolioDetailComponent} from './components/portfolio/portfolio-detail/portfolio-detail.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {PortfolioDetailService} from './service/portfolio-detail.service';
+import {AboutmeService} from './service/aboutme.service';
 
 @NgModule({
   declarations: [
