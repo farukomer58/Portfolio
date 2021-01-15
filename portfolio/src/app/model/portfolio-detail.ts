@@ -1,6 +1,7 @@
 export class PortfolioDetail {
 
   id: number;
+  image: string[];
   title: string;
   shortDescription: string;
   description: string;

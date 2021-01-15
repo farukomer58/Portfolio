@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {PortfolioDetail} from '../../../model/portfolio-detail';
 import {PortfolioDetailService} from '../../../service/portfolio-detail.service';
@@ -16,6 +16,9 @@ export class PortfolioDetailComponent implements OnInit {
   hasMoreTechnologies: boolean;
   partOneTechnologies: any[];
   partTwoTechnologies: any[];
+
+  @ViewChild('modal') modal: ElementRef; // Get The Image Modal
+  @ViewChild('modalImg') modalImg: ElementRef; // Get The Image Modal
 
   constructor(private route: ActivatedRoute, private portfolioService: PortfolioDetailService) {
   }
@@ -36,6 +39,18 @@ export class PortfolioDetailComponent implements OnInit {
         this.partOneTechnologies = this.portfolioItemDetail.technologies;
       }
     });
+  }
+
+  /** Show Image in A Modal */
+  showImageOne(event): any {
+    console.log(event.srcElement.currentSrc);
+    this.modal.nativeElement.style.display = 'block';
+    this.modalImg.nativeElement.setAttribute('src', event.srcElement.currentSrc);
+  }
+
+  /** Close the Modal */
+  closeModal(): any {
+    this.modal.nativeElement.style.display = 'none';
   }
 
 

@@ -138,7 +138,7 @@
               <div class="m-2" *ngFor="let skill of skillsRowOne">
                 <li class="descriptionHead">{{skill.skillName}}</li>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                  <div class="progress-bar progress-bar-striped" [ngClass]="skill.skillColor" role="progressbar"
                        [style.width.%]="skill.skillPercentage"
                        aria-valuenow="{{skill.skillPercentage}}" aria-valuemin="0"
                        aria-valuemax="100">{{skill.skillPercentage}}%
@@ -154,7 +154,7 @@
               <div class="m-2" *ngFor="let skill of skillsRowTwo">
                 <li class="descriptionHead">{{skill.skillName}}</li>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                  <div class="progress-bar progress-bar-striped" [ngClass]="skill.skillColor" role="progressbar"
                        [style.width.%]="skill.skillPercentage"
                        aria-valuenow="{{skill.skillPercentage}}" aria-valuemin="0"
                        aria-valuemax="100">{{skill.skillPercentage}}%
@@ -168,7 +168,7 @@
               <div class="m-2" *ngFor="let skill of skillsRowThree">
                 <li class="descriptionHead">{{skill.skillName}}</li>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                  <div class="progress-bar progress-bar-striped" [ngClass]="skill.skillColor" role="progressbar"
                        [style.width.%]="skill.skillPercentage"
                        aria-valuenow="{{skill.skillPercentage}}" aria-valuemin="0"
                        aria-valuemax="100">{{skill.skillPercentage}}%
@@ -186,7 +186,6 @@
       <hr>
     </div>
   </div>
-
 
   <!-- Portfolio Items -->
   <div class="col-12">
