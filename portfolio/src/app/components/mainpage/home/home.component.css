@@ -48,10 +48,20 @@
   font-size: 16px;
 }
 .descriptionSmall{
-  font-size: 9px;
+  font-size:8px;
   font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .descriptionText {
   font-size: 16px;
   font-style: italic;
+}
+
+.resumeButton{
+  border-radius: 5%;
+  font-size: 12px;
+  cursor:pointer;
+  text-decoration: none;
 }

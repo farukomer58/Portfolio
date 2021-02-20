@@ -44,17 +44,17 @@
     </div>
     <div class="row">
       <div class="col-12 p-1">
-        <p><b>[ShortDescription]</b> {{portfolioItemDetail.shortDescription}}</p>
+        <p class="text-center">{{portfolioItemDetail.shortDescription}}</p>
         <ul>
           <li>Date started: {{portfolioItemDetail.started}}</li>
           <li>Date ended: {{portfolioItemDetail.ended}}</li>
-          <li>Github: {{portfolioItemDetail.github}}</li>
+          <li>Github: <a class="descriptionSmall" target="_blank" [href]="portfolioItemDetail.github">{{portfolioItemDetail.github}}</a></li>
         </ul>
       </div>
     </div>
     <div class="row" style="width: 100%;">
       <div class="col-12" style="position: relative">
-        <button class="btn btn-success" style="width: 100%;">Live Demo!</button>
+        <a target="_blank" [href]="portfolioItemDetail.demo" class='btn btn-success' style="width:100%" [class.disabled]="!portfolioItemDetail.demo">Live Demo!</a>
       </div>
     </div>
 
@@ -70,8 +70,7 @@
     <!-- Here the information about product/project -->
     <div class="col-md-8" style="border-right: 1px solid rgba(0, 0, 0, .2 );">
       <h4 class="text-center">Information</h4>
-
-      <p><b>[LongDescription]</b> {{portfolioItemDetail.description}}</p>
+      <p [innerHTML]="portfolioItemDetail.description"></p>
     </div>
 
     <!-- RIGTHSIDE: Here details of the portfolio item -->

@@ -10,11 +10,11 @@
 <div class="row">
   <div class="col-md-4 itemStyle" routerLink="/portfolio-detail" [queryParams]="{id:item.id}"
        *ngFor="let item of allPortfolioItems">
-    <div class="text-center bg-light p-2 m-2">
+    <div class="text-center bg-light p-2 m-2" style="height: 350px">
       <img [src]="item.image?item.image:'https://i.imgur.com/0TTaPUL.jpg'" width=230px height="150px" alt=""><br>
       <b>{{item.title}} </b> <br>
       <p>{{item.shortDescription}}</p>
-      <div class="col-md-12 mt-5 fakeRouter">Click for more
+      <div class="col-md-12 fakeRouter">Click for more
         details
       </div>
     </div>

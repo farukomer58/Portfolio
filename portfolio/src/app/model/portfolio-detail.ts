@@ -11,4 +11,5 @@ export class PortfolioDetail {
   client: string;
   technologies: any[];
   github: string;
+  demo: string;
 }
